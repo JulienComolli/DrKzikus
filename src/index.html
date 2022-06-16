@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,67 @@
     <title>DrKzikus</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
     <main>
-        <h1>Dr.Kzikus</h1>
-        <input type="text" placeholder="Chaussette">
-        <button>Définis moi !</button>
+        <section id="contenu" class="display-none">
+
+            <h2></h2>
+            <h4></h4>
+            <img src="">
+
+            <div class="definitions">
+
+            </div>
+
+
+            <h5>Mots communs précedant le mot dans le corpus de texte de Google</h5>
+            <ul class="mots-precedents" class="">
+
+            </ul>
+
+            <h5>Mots communs suivants le mot dans le corpus de texte de Google</h5>
+            <ul class="mots-suivants">
+
+            </ul>
+
+
+
+        </section>
+
+        <section id="landing">
+            
+            <h1 id="titre">Dr.Kzikus</h1>
+            <div id="description" class="">
+                <p>Le Dr.Kzikus vous permet d'obtenir des statistiques sur un mot <em>Français</em> afin d'enrichir
+                    votre culture !</p>
+                <h2>Liste des apis utilisées</h2>
+                <ul>
+                    <li>Le WikiRacloir - Api Créé pour le projet</li>
+                    <li>Google Ngram</li>
+                    <li>Datamuse</li>
+                    <li>Openlibrary</li>
+                </ul>
+            </div>
+
+            <div id="chargement" class="display-none">
+                Chargement...
+            </div>
+
+
+            <div id="ask-drkzikus">
+                <div class="separator-line"></div>
+
+                <input id="mot" class="margin-top" type="text" placeholder="Chaussette">
+                <button id="btn" onclick="search_word(event)">Dr.Kzikus !</button>
+            </div>
+
+        </section>
+
+
     </main>
 
-    <script  type="module" src="assets/js/index.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>

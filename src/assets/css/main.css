@@ -1,3 +1,13 @@
+:root {
+    --body-bg-color: whitesmoke;
+    --main-bg-color: #4D4C7D;
+    --main-shadow-color: #827397;
+    --text-color: white;
+
+    --btn-color: #8f1d82;
+    --btn-color-hover: #3d383d;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,19 +15,114 @@
 
 body {
     width: 100vw;
-    height: 100vh;
-    background-color: dodgerblue;
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    overflow-x: hidden;
     font-family: sans-serif;
+    color: var(--text-color)
 }
 
 main {
+    margin: 20px 0;
+    max-width: 90vw;
+    width: 700px;
+    box-sizing: content-box;
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: var(--main-shadow-color) 0 0 1px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+main ol {
+    padding-left: 50px;
+}
+main p {
+    text-align: center;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+main > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 30px;
+}
+
+
+main h5 {
+    margin-top: 30px;
+}
+
+main #description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #description ul {
+    list-style-type: circle;
+}
+
+main input[type=text] {
+    padding: 2px;
+    padding-left: 10px;
+    font-size: 1.7em;
+    border-radius: 2px;
+    border: 1px solid;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+main button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    color: whitesmoke;
+    width: 160px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: var(--btn-color-hover);
+    color: white;
+}
+
+main button:active {
+    background-color: var(--main-shadow-color);
+}
+
+#ask-drkzikus {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Utils CSS Classes */
+.display-none {
+    display: none !important;
+}
+
+.separator-line {
+    margin: 15px 0px;
+    width: 30%;
+    height: 1px;
+    background-color: black;
 }

@@ -1,15 +1,15 @@
 # DrKzikus
 
-Serveur dev : `npm run dev`
-Build le porjet : `npm run build`
+Le principe est simple, rechercher un mot pour avoir ses définitions et obtenir quelques statistiques ou informations intéressantes en plus sur ce dernier.
+
+
+L'api [LeWikiRacloir](https://lewikiracloir.enthousiasme.io/) que j'ai faite à été utilisée code source [ici](https://github.com/JulienComolli/LeWikiRacloir).
+
+Il suffit d'ouvrir le index.html pour voir l'application.
 
 # Liste des API utilisées
 
-- [Ngram](https://books.google.com/ngrams) / [Tutorial](https://jameshfisher.com/2018/11/25/google-ngram-api/) --> Posséder la fréquence dans un corpus
 - [Datamuse](https://datamuse.com/)
     - [Mots suivants fréquents](https://api.datamuse.com/words?rel_bga=mot)
     - [Mots précédent fréquents](https://api.datamuse.com/words?rel_bgb=mot)
-- [OpenLibrary](http://openlibrary.org/subjects/) --> Livres liés au mot
 - [LeWikiRacloir](https://lewikiracloir.enthousiasme.io/) --> Définition / Etymologie des mots / Image
-- [Imsea](https://imsea.herokuapp.com) --> Avoir une image
-
